@@ -10,7 +10,7 @@
 # COMMAND ----------
 
 # File location and type
-file_location = "/FileStore/shopping_trends.csv"
+file_location = "/dbfs/FileStore/Baby_Names__Beginning_2007.csv"
 file_type = "csv"
 
 # CSV options
@@ -31,9 +31,14 @@ display(df)
 
 # Create a view or table
 
-temp_table_name = "shopping_trends_csv"
+#temp_table_name = "shopping_trends_csv"
 
-df.createOrReplaceTempView(temp_table_name)
+#df.createOrReplaceTempView(temp_table_name)
+help(df.createOrReplaceTempView)
+
+# COMMAND ----------
+
+
 
 # COMMAND ----------
 
